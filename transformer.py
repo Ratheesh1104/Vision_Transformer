@@ -2,7 +2,7 @@ import torch.nn as nn
 
 class TransformerEncoderBlock(nn.Module):
     def __init__(self, embed_dim , num_heads, mlp_dim, droupot = 0.1):
-        super.__init__(self):
+        super.__init__(self)
 
         self.norm1 = nn.LayerNorm(embed_dim)
         self.attn = nn.MultiheadAttention(
